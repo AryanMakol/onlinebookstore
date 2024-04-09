@@ -10,7 +10,7 @@ pipeline {
                                                                                                                                             git branch: 'master', url: 'https://github.com/AryanMakol/onlinebookstore.git'
                                                                 }
             }
-            stage('Build' and 'Test') {
+            stage('Build and Test') {
             steps {
                 sh 'ls -ltr'
                 echo 'Building the project...'
