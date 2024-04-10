@@ -4,8 +4,8 @@ pipeline {
         stages {  
        	    stage('Checkout') {
                                                                 steps {
-                                                                                                                                            sh 'echo "Checkout stage passed"'
-                                                                                                                                            git branch: 'master', url: 'https://github.com/AryanMakol/onlinebookstore.git'
+                                                                        sh 'echo "Checkout stage passed"'
+                                                                        git branch: 'master', url: 'https://github.com/AryanMakol/onlinebookstore.git'
                                                                 }
             }
             stage('Build and Test') {
